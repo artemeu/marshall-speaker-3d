@@ -1,0 +1,18 @@
+{
+  "name": "marshall-speaker-3d",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Primer Parcial - Diseño y Programación Web II - Escena 3D con Three.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

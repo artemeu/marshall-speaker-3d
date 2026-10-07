@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rodríguez, Francisco – Diseño Multimedial – Diseño y Programación Web II – Turno Noche – Comisión DMN4CV – Docente: Artem Pylypenko – Septiembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <a href="#top" class="logo">
+      <img src="/assets/marshall-logo.png" alt="Marshall" class="logo-img" />
+    </a>
+    <nav class="main-nav">
+      <a href="#producto">Producto</a>
+      <a href="#features">Características</a>
+      <a href="#specs">Especificaciones</a>
+      <a href="#cta" class="nav-cta">Comprar</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO / ESCENA 3D ================= -->
+  <section id="producto" class="hero">
+    <canvas id="webgl"></canvas>
+
+    <div id="loader" class="loader">
+      <span class="loader-ring"></span>
+      <p>Cargando modelo 3D…</p>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Bluetooth Speaker</p>
+      <h1>EMBERTON<br><span>SOUND.</span></h1>
+      <p class="hero-desc">Sonido 360° con la actitud Marshall de siempre. Compacto, resistente y listo para acompañarte a cualquier lado.</p>
+      <a href="#cta" class="btn btn-primary">Descubrir el producto</a>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Arrastrá para girar el producto</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- ================= GALERÍA ================= -->
+  <section id="galeria" class="gallery">
+    <h2 class="section-title">Cada ángulo, a la vista</h2>
+    <div class="gallery-grid">
+
+      <figure class="gallery-item">
+        <img src="/assets/gallery-frontal.webp" alt="Marshall Emberton – vista frontal" />
+        <figcaption>Frontal</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="/assets/gallery-ambiente.webp" alt="Marshall Emberton – vista atmosférica" />
+        <figcaption>Ambiente</figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img src="/assets/gallery-detalle.webp" alt="Marshall Emberton – detalle de textura y logo" />
+        <figcaption>Detalle</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section id="features" class="features">
+    <h2 class="section-title">Por qué elegirlo</h2>
+    <div class="features-grid">
+
+      <article class="feature-card">
+        <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+          <circle cx="24" cy="24" r="11" stroke="currentColor" stroke-width="2"/>
+          <circle cx="24" cy="24" r="3" fill="currentColor"/>
+        </svg>
+        <h3>Sonido 360°</h3>
+        <p>Audio envolvente que llena cualquier espacio sin perder claridad ni graves profundos.</p>
+      </article>
+
+      <article class="feature-card">
+        <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 4 8 11v11c0 10.4 6.8 18.6 16 22 9.2-3.4 16-11.6 16-22V11L24 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M17 24l5 5 9-11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Resistencia IP67</h3>
+        <p>Sellado contra polvo y sumergible: lo llevás a la playa, la ducha o el próximo asado sin cuidados extra.</p>
+      </article>
+
+      <article class="feature-card">
+        <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="14" y="6" width="20" height="36" rx="4" stroke="currentColor" stroke-width="2"/>
+          <rect x="20" y="2" width="8" height="4" rx="1" fill="currentColor"/>
+          <path d="M22 30l4-8h-4l4-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>+20 horas de batería</h3>
+        <p>Una carga te acompaña todo el fin de semana. Carga rápida cuando el tiempo apremia.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= ESPECIFICACIONES ================= -->
+  <section id="specs" class="specs">
+    <div class="specs-header">
+      <h2 class="section-title">Especificaciones técnicas</h2>
+      <p>Diseño icónico por fuera, ingeniería de precisión por dentro.</p>
+    </div>
+    <dl class="specs-grid">
+      <div class="spec-item"><dt>Potencia</dt><dd>30 W RMS</dd></div>
+      <div class="spec-item"><dt>Conectividad</dt><dd>Bluetooth 5.1</dd></div>
+      <div class="spec-item"><dt>Autonomía</dt><dd>20+ horas</dd></div>
+      <div class="spec-item"><dt>Resistencia</dt><dd>IP67 polvo y agua</dd></div>
+      <div class="spec-item"><dt>Carga</dt><dd>USB-C rápida</dd></div>
+      <div class="spec-item"><dt>Peso</dt><dd>700 g</dd></div>
+      <div class="spec-item"><dt>Dimensiones</dt><dd>16 × 9 × 7 cm</dd></div>
+      <div class="spec-item"><dt>Multi-host</dt><dd>Empareja 2 dispositivos</dd></div>
+    </dl>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section id="cta" class="cta">
+    <h2>Llevá el sonido Marshall a todos lados.</h2>
+    <p>Envío gratis y 2 años de garantía oficial.</p>
+    <a href="#producto" class="btn btn-dark">Ver el modelo en 3D</a>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <img src="/assets/marshall-logo.png" alt="Marshall" class="footer-logo" />
+      <nav class="footer-nav">
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <a href="#producto">Vista 3D</a>
+          <a href="#features">Características</a>
+          <a href="#specs">Especificaciones</a>
+        </div>
+        <div class="footer-col">
+          <h4>Compañía</h4>
+          <a href="#">Sobre Marshall</a>
+          <a href="#">Tiendas</a>
+          <a href="#">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h4>Seguinos</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">TikTok</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Marshall Amps. Proyecto académico — Diseño Multimedial · Diseño y Programación Web II · Comisión DMN4CV.</p>
+    </div>
+  </footer>
+
+</div>
+
+<script type="module" src="/script.js"></script>
+</body>
+</html>
